@@ -8,7 +8,7 @@ fi
 NEWLINE=$'\n'
 
 #PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ ) %{$fg[cyan]%}%c%{$reset_color%}"
-PROMPT="${NEWLINE}%F{magenta}[$IP] %F{green}- (%B%F{%(#.red.blue)}%n@%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]${NEWLINE}└─%B%(#.%F{red}#.%F{blue} $)%b%F{reset} "
+PROMPT="${NEWLINE}%F{%(#.blue.green)}┌──%F{magenta}[$IP] %F{green}- (%B%F{%(#.red.blue)}%n@%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]${NEWLINE}└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} "
 PROMPT+=' $(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
